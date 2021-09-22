@@ -1,0 +1,71 @@
+Practica 6 - Bootstrap
+Martin Comparetto
+•
+16 sep.
+100 puntos
+Modificar algun ejercicio y utilizar estilos de Bootstrap
+Tu trabajo
+Entregadas
+
+datosGuardados.html
+HTML
+
+estilos.css
+Style Sheet
+
+formulario.html
+HTML
+Comentarios privados
+Comentarios de la clase
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    
+}
+body{
+    width: 100%;
+    height: 100 vh;
+    background-color:yellow;
+
+}
+
+h1{
+    font-size: 60px !important; 
+    color: blueviolet;
+    text-align: center;
+    margin: auto;
+    background-color: black;
+    font-family: 'Pacifico', cursive;
+    
+}
+label{
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+}
+
+div{
+    font-size: 20px;
+    background-color: rgb(251, 255, 0);
+    color: black;
+}
+
+.redondeado{
+    border-radius: 3px;
+  }
+
+input[type=submit] {
+    border: 1px solid #0e85f4;
+    color: #fff;
+    background: rgb(74, 71, 255);
+    padding: 10px 20px;
+    border-radius: 3px;
+    width:25%; 
+    height:25%;
+        
+}
+::placeholder {
+    font-family: 'Pacifico', cursive;
+  }
+
+input[type=submit]:hover {
+    background: #f44c0e;
+}

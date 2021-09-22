@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="estilos.css">
+    <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+    <title>Formaulario</title>
+
+</head>
+<body>
+    <header>
+        <h1> Formulario de comunidad IT </h1>
+    </header>
+    <div>
+        <form method="POST" action="datosGuardados.html">
+
+            <div class="row">
+                <div class="col">
+                  <label for="">Nombre</label><input type="text" class="form-control" placeholder="Nombre" aria-label="nombre">
+                </div>
+                <div class="col">
+                  <label for="">Apellido</label><input type="text" class="form-control" placeholder="Apellido" aria-label="apellido">
+                </div>
+              </div> 
+              <div >
+                <label for="">Fecha de Nacimiento:</label> <input type="date" class="redondeado" name="fechaNacimiento">
+            </div>
+        
+                <div class = "col-sm-7">
+                    <label for="">Telefono</label><input type="number" type="tel"  class="form-control" placeholder="(Código de área) Número" name="telefono" pattern="[0-9]{10}" title="numeroTelefono">
+                </div>
+            
+
+            <div class = "col-sm-7">
+                <label for="">Email: </label><input type="email"  class= "form-control" placeholder="ejemplo@ejemplo.com" name="email">
+            </div>
+            <div>
+                <label for="">Tipo de Documento:</label>
+
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="inlineRadio1">Dni</label>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="dni">
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="inlineRadio2">Pasaporte</label>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="pasaporte">
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="inlineRadio2">Otro</label>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="otro">
+                  </div>
+            <br>
+            </div>
+            <div class = "col-sm-7">
+                <label for="">Numero Documento:</label><input type="number" class= "form-control" placeholder="ingrese documento" name="numeroDocumento" >
+            </div>
+            
+            <label for="">Estudios</label> <select name="Estudios" id="">
+                <option value="Autodidacta"> Autodidacta</option>
+                <option value="Curso">Cursos</option>
+                <option value="Universitario"> Universidad</option>
+            </select> <br>
+            <label for="">Horario para cursar</label>
+                <select name="horario" id="">
+                <option value="maniana">Mañana</option>
+                <option value="tarde">Tarde</option>
+                <option value="Noche">Noche</option>
+                </select><br>
+            <div class="row">
+                <div class="col">
+                    <label for="">Comentario: </label><input class = "form-control"  type="text" class= "redondeado" placeholder="(opcional)" name="tipo_de_dato"/><br>
+                </div>
+                
+            </div>
+            <center>
+                <div >
+                <input type="submit" value="Guardar">
+                </div>
+            </center>
+            
+            
+            </form>
+
+
+    </div>
+</body>
+</html>
